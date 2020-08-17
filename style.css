@@ -1,0 +1,12 @@
+.shower {
+    --slide-ratio: calc(16 / 9);
+}
+
+.screenshot {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.screenshot.sm {
+  width: 49%;
+}
