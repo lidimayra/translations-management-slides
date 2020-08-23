@@ -10,3 +10,7 @@
 .screenshot.sm {
   width: 49%;
 }
+
+.small {
+  font-size: 12px;
+}
