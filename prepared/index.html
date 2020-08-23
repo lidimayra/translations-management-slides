@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Cloud-based Translation Management</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="shower list">
+  <head>
+    <title>Translations Management</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="shower list">
 
     <header class="caption">
       <h1>Shower Presentation Engine</h1>
@@ -16,15 +16,88 @@
 
     <section class="slide">
       <!-- Create your first slide -->
-      <h2 class="shout shrink">Cloud-based Translation Management</h2>
+      <h2 class="shout shrink">Translations Management</h2>
+    </section>
+
+    <section class="slide">
+      <h2>i18n</h2>
+
+      <p>
+        Design and development of a product, application or document content
+        that <strong>enables</strong> easy localization for target audiences
+        that vary in culture, region, or language.
+      </p>
+
+      <p class="small">
+      Ref: <a href="https://www.w3.org/International/questions/qa-i18n">
+        W3C - Localization vs. Internationalization
+      </a>
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>l10n</h2>
+      <p>
+        The <strong>adaptation</strong> of a product, application or document
+        content to meet the language, cultural and other requirements of a
+        specific target market (a locale).
+      </p>
+
+      <p class="small">
+      Ref: <a href="https://www.w3.org/International/questions/qa-i18n">
+        W3C - Localization vs. Internationalization
+      </a>
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>i18n != l10n</h2>
+      <figure>
+        <blockquote>
+          <p>
+            When I mention localization, I mean translation, adaptation, and the
+            linguistic work that goes into localization. Internationalization is
+            the other half: You can think of it as anything a developer puts
+            their hands on, from the scripts we’re using to our strings and the
+            tools, the infrastructure, and the backend to provide different
+            currencies for users.
+          </p>
+        </blockquote>
+        <figcaption>
+          Adam Sawyer, former team leader of localization at Dropbox
+        </figcaption>
+      </figure>
+
+      <p class="small">
+      Ref: <a href="https://increment.com/internationalization/its-probably-never-going-to-work-in-german/">
+        It’s probably never going to work in German
+      </a>
+      </small>
+    </section>
+
+    <section class="slide">
+      <h2>Challenges</h2>
+      <ul>
+        <li>
+          Developers take care of enabling a product to be easily localized, but
+          these same professionals might not realize the impact that comes on
+          the content of the messages itself
+        </li>
+
+        <li>
+          Management of this content must be aligned with product decisions
+        </li>
+      </ul>
     </section>
 
     <section class="slide">
       <h2>Manual management</h2>
-
       <ul>
+        <li>
+          Developers and product specialists eventually have to go back and
+          forth on translation changes
+        </li>
         <li>Prone to errors</li>
-        <li>Requires engineering effort to be maintained</li>
         <li>Progress of tasks rely on text content definitions</li>
       </ul>
     </section>
@@ -40,9 +113,6 @@
       <li>Provides easy access to additional members</li>
     </section>
 
-    <section class-"">
-    </section>
-
     <section class="slide">
       <h2>Main players</h2>
       <ul>
@@ -53,7 +123,21 @@
     </section>
 
     <section class="slide">
-      <h2>Transifex</h2>
+      <h2>The Process</h2>
+      <img src="images/continuous_localization.png" class="continuous_loc"/>
+      <p class="small">
+      Ref: <a
+        href="https://www.transifex.com/resources/localization-for-agile-teams-guide/">
+        The Complete 2020 Localization Guide for Agile Teams
+    </section>
+
+    <section class="slide">
+      <h2>Transifex - GitHub Integration</h2>
+      <img class="github_config" src="images/github_config.png"/>
+    </section>
+
+    <section class="slide">
+      <h2>Transifex UI</h2>
 
       <img class="screenshot" src="images/transifex.png"/>
     </section>
@@ -68,8 +152,23 @@
       <a href="https://github.com/lidimayra/descriptive-statistics/pull/2">here</a>
     </section>
 
+    <section class="slide">
+      <h2>Other ways to upload content</h2>
+
+      <ul>
+        <li>Manually (Transifex platform)</li>
+        <li>Transifex API</li>
+        <li>CLI Client</li>
+        <li>Integration tools (Figma, Bitbucket, Jenkins and others...)</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout shrink">Thank you!!</h2>
+    </section>
+
     <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+      <a href="https://github.com/shower/shower">Fork me on GitHub</a>
     </footer>
 
     <div class="progress"></div>
@@ -77,5 +176,5 @@
     <script src="shower/shower.js"></script>
     <!-- Copyright © 2020 Yours Truly, Famous Inc. -->
 
-</body>
+  </body>
 </html>

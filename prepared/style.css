@@ -10,3 +10,15 @@
 .screenshot.sm {
   width: 49%;
 }
+
+.continuous_loc {
+  width: 60%;
+}
+
+.github_config {
+  width: 90%;
+}
+
+.small {
+  font-size: 12px;
+}
